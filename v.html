@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>заголовок</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("https://im.wampi.ru/2022/09/05/Quepal.png");/*ссылка на изображение*/
+            background-size: 100vw 100vh;
+            text-align: center;
+            color: #ffffff;/*цвет текста*/
+            font-size: 54px;
+        }
+        p {
+            margin-left: 2vw;
+            text-align: left;
+        }
+        #tr {
+            text-align: center;
+            position: relative;
+            width: 70vw;
+            background-color: #000000;/*цвет фона*/
+            background-size: 100vw 110%;
+        }
+        ie{font-size: 65px;}
+    </style>
+</head>
+<body>
+    <div style="position: fixed; height: 100vh;" id="tr"></div>
+    <div style="left: 15vw;" id="tr">
+        <ie>заголовок</ie>
+            <i>
+                <p>
+                    текст
+                </p>
+            </i>
+            
+    </div>
+    <script>
+        var width = document.documentElement.scrollWidth;
+        if (width >= 1400) {
+            document.getElementById('tr').style.left = '15vw';
+        }else{
+            document.getElementById('tr').style.left = '0px';
+            document.getElementById('tr').style.width = '100vw';
+        }
+    </script>
+</body>
+</html>
